@@ -1,0 +1,7 @@
+dotenv
+express
+mongoose
+nodemon
+validator
+xlsx
+multer
