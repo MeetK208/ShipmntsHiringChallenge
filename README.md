@@ -41,7 +41,7 @@ This backend API provides functionalities for managing book and author data thro
   }
   ```
 
-### 1. View Excel Data
+### 2. View Excel Data
 
 **Endpoint:** `POST localhost:8080/api/v1/books/getall/
 
