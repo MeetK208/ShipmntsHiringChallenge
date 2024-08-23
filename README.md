@@ -1,7 +1,9 @@
 # ShipmntsHiringChallenge
 
 ### Atteched Screenshot in PDF File
-I have created Backend as I am more familiar with backedn side, Cloud and Database. 
+I have been focusing on backend development as I’m more familiar with backend, cloud, and database technologies. As part of this, I have initially developed the backend for my project. Additionally, I’ve been learning and implementing some frontend components to complement the backend work.
+
+
 In Backend I have created base API api/v1/book that has functionalities in Routes to Upload API, View API, Reject API, Confirm 
 
 ## API Endpoints
