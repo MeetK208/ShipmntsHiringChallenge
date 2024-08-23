@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from "react";
+import UploadButton from "./components/UploadButton";
+import DataTable from "./components/DataTable";
+import ActionButtons from "./components/ActionButtons";
 
-function App() {
+const App = () => {
+  const [data, setData] = useState([]);
+
+  const handleFileUpload = (uploadedData) => {
+    setData(uploadedData);
+  };
+
+  const handleSave = () => {
+    // Logic to save data
+    console.log("Data saved:", data);
+  };
+
+  const handleCancel = () => {
+    setData([]); // Clear data
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <UploadButton onFileUpload={handleFileUpload} />
+      {data.length > 0 && <DataTable data={data} />}
+      {data.length > 0 && (
+        <ActionButtons onSave={handleSave} onCancel={handleCancel} />
+      )}
     </div>
   );
-}
+};
 
 export default App;
