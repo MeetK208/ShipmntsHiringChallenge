@@ -64,10 +64,6 @@ This backend API provides functionalities for managing book and author data thro
   }
   ```
 
-## Overview
-
-This API provides endpoints for rejecting or confirming book and author data that has been temporarily stored in the session after an Excel file upload.
-
 ## Endpoints
 
 ### 3. Reject Data
