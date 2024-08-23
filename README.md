@@ -1,14 +1,22 @@
 # ShipmntsHiringChallenge
 
 ### Atteched Screenshot in PDF File
-I have created Backend In that I have two main 1 api/v1/book that has functionalities
+I have created Backend as I am more familiar with backedn side, Cloud and Database. 
+In Backend I have created base API api/v1/book that has functionalities in Routes to Upload API, View API, Reject API, Confirm 
 
-1. Upload Excel Sheet: localhost:8080/api/v1/books/upload
-2. View Excel Data : localhost:8080/api/v1/books/getall/
-3. Reject Data (In-case we don't want to store) : localhost:8080/api/v1/companies/reject/1724364246868
-   Here I have used Seesion data to store when user is upload file and then when it will reject it will delete from session
-4. Accept Data (To Store Data in mongoDB): localhost:8080/api/v1/books/confirm/1724428499449
-   Once We know that data is okay from sessionID I get that data from sessionID and then storing data in Db for That First I am storing Author data then i am storing Book data for mapping of AuthorId to Book schema so we get to know that this book is written by this user.
+## API Endpoints
+
+1. **Upload Excel Sheet**: `localhost:8080/api/v1/books/upload`
+   - This endpoint allows you to upload an Excel file containing book data.
+
+2. **View Excel Data**: `localhost:8080/api/v1/books/getall/`
+   - This endpoint retrieves and displays all data from the uploaded Excel files.
+
+3. **Reject Data**: `localhost:8080/api/v1/companies/reject/1724364246868`
+   - This endpoint removes data from the session if it is not to be stored. The `1724364246868` represents the session ID where the data is temporarily stored.
+
+4. **Confirm Data**: `localhost:8080/api/v1/books/confirm/1724428499449`
+   - This endpoint confirms and stores data in MongoDB. It uses the session ID to retrieve data from the session and then stores it in the database. Author data is stored first, followed by book data, with a mapping of `AuthorID` to the book schema to indicate which author wrote which book.
 
 upload Excel Sheet: localhost:8080/api/v1/books/upload
 
