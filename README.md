@@ -1,8 +1,7 @@
 # ShipmntsHiringChallenge
 
 ### Atteched Screenshot in PDF File
-I have been focusing on backend development as I’m more familiar with backend, cloud, and database technologies. As part of this, I have initially developed the backend for my project. Additionally, I’ve been learning and implementing some frontend components to complement the backend work.
-
+I have been focusing on backend development since I am more familiar with backend, cloud, and database technologies. For this project, I initially developed the backend. Additionally, I have been learning and implementing some frontend components to integrate with the backend API, allowing for data display and interaction.
 
 In Backend I have created base API api/v1/book that has functionalities in Routes to Upload API, View API, Reject API, Confirm 
 
